@@ -90,5 +90,5 @@ for x in range(360):  # For each column of image
 while True:  # Loop forever
 
     for x in range(360):  # For each column of image...
-        DOTS[0 : DOTS.n] = Final[x]  # Copy column to DotStar buffer
+        DOTS[0 : DOTS.n] = FINAL[x]  # Copy column to DotStar buffer
         DOTS.show()  # Send data to strip
