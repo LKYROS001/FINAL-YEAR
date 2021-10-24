@@ -73,7 +73,7 @@ print("Displaying...")
 
 FINAL = [0 for x in range(360)]
 for x in range(360):
-    FINAL[x] = [[0, 0, 0, 0] for _ in range(72)]
+    FINAL[x] = [[0, 0, 0, 0] for _ in range(144)]
 ratio = 128/144
 distance = 0.0
 for x in range(360):  # For each column of image
