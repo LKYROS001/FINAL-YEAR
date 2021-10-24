@@ -88,7 +88,7 @@ for x in range(360):  # For each column of image
 #print(FINAL[0])
 
 while True:  # Loop forever
-
+    print("rotation")
     for x in range(360):  # For each column of image...
         DOTS[0 : DOTS.n] = FINAL[x]  # Copy column to DotStar buffer
         DOTS.show()  # Send data to strip
