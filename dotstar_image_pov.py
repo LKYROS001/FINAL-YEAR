@@ -20,7 +20,7 @@ import time
 from PIL import Image
 import adafruit_dotstar as dotstar
 
-NUMPIXELS = 30  # Length of DotStar strip
+NUMPIXELS = 72  # Length of DotStar strip
 FILENAME = "sized2.png"  # Image file to load
 ORDER = dotstar.BGR  # Change to GBR for older DotStar strips
 
@@ -73,11 +73,11 @@ print("Displaying...")
 
 FINAL = [0 for x in range(360)]
 for x in range(360):
-    FINAL[x] = [[0, 0, 0, 0] for _ in range(144)]
-ratio = 128/144
+    FINAL[x] = [[0, 0, 0, 0] for _ in range(72)]
+ratio = 128/72
 distance = 0.0
 for x in range(360):  # For each column of image
-    for y in range(144):  # For each pixel in column
+    for y in range(72):  # For each pixel in column
         distance = ratio * y
         fx = round((distance * math.cos(math.radians(x))) + 128)
         fy = round((-1 * distance * math.sin(math.radians(y))) + 128)
